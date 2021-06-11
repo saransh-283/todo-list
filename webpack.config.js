@@ -31,16 +31,20 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg)$/,
-                //use: [{
-                //    loader: 'file-loader',
-                //options: {
-                //    name: '[name].[ext]',
-                //}
-                //}],
                 type: 'asset/resource',
                 generator: {
                     filename: 'img/[name][ext]'
                 }
+            },
+            {
+                test: /\.html$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'html/[name].[ext]'
+                    }
+                },
+                exclude: path.resolve(__dirname, 'src/index.html')
             },
             {
                 test: /\.scss$/,
