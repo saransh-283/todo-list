@@ -32,7 +32,7 @@ ___
 ├── package-lock.json
 ├── package.json
 ├── readme.md
-├── webpack.config.js
+└── webpack.config.js
 ```
 &nbsp;
 ___
