@@ -1,7 +1,7 @@
 # NPM Project Boilerplate
 ___
 
-With React and Sass support
+With React, Sass and jQuery support
 ___
 
 ### Folder structure
@@ -11,15 +11,22 @@ ___
 ├── node_modules
 ├── dist
 │   ├── bundle.js
+│   ├── html
+|   |   └── users.html
+│   ├── img
+|   |   └── webpack.png
 │   ├── index.html
 |   └── style.html
 ├── src
 |   ├── img
-|   |   └──
+|   |   └── webpack.png
 |   ├── css
 |   |   └── style.scss
+│   ├── html
+|   |   └── users.html
 │   ├── js
 |   |   └── one.js
+│   ├── index.html
 │   └── index.js
 ├── .babelrc
 ├── package-lock.json
