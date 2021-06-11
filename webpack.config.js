@@ -1,7 +1,11 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const extractPlugin = new MiniCssExtractPlugin({
     filename: 'style.css'
+})
+const htmlWebpackPlugin = new HtmlWebpackPlugin({
+    template: 'src/index.html'
 })
 
 module.exports = {
@@ -9,7 +13,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
+        filename: "bundle.js",
     },
     devServer: {
         port: "5000",
@@ -20,6 +24,23 @@ module.exports = {
         rules: [{
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.html$/,
+                use: ['html-loader']
+            },
+            {
+                test: /\.(png|jpg)$/,
+                //use: [{
+                //    loader: 'file-loader',
+                //options: {
+                //    name: '[name].[ext]',
+                //}
+                //}],
+                type: 'asset/resource',
+                generator: {
+                    filename: 'img/[name][ext]'
+                }
             },
             {
                 test: /\.scss$/,
@@ -43,5 +64,8 @@ module.exports = {
             }
         ]
     },
-    plugins: [extractPlugin]
+    plugins: [
+        extractPlugin,
+        htmlWebpackPlugin
+    ]
 }

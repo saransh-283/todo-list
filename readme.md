@@ -14,6 +14,8 @@ ___
 │   ├── index.html
 |   └── style.html
 ├── src
+|   ├── img
+|   |   └──
 |   ├── css
 |   |   └── style.scss
 │   ├── js
