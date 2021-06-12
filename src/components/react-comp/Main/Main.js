@@ -1,19 +1,21 @@
-import React from 'react'
-import All from '../AllItems/AllTodo'
-import Finished from '../FinishedItems/Finished'
-import NewTodo from '../NewTodo/NewTodo'
-import Unfinished from '../Unfinished/Unfinished'
-import Todo from '../Todo/Todo'
-import './Main.scss'
+import React from "react";
+import { Provider } from "react-redux";
+import connected from "../../react-redux-connect/connect-comp";
+//import stateMaps from "../../react-redux-connect/maps";
+import "./Main.scss";
 
-const Presentational=()=>{
-    return <div id="main-cont">
-        <NewTodo />
-        <Finished />
-        <Unfinished />
-        <All />
-        <Todo/>
+const Main = () => {
+  return (
+    <div id="main-cont">
+      <Provider store={connected.store}>
+        <connected.AllTodoConnected />
+        <connected.FinishedConnected />
+        <connected.NewTodoConnected />
+        <connected.UnfinishedConnected />
+        <connected.TodoConnected />
+      </Provider>
     </div>
-}
+  );
+};
 
-export default Presentational
+export default Main;

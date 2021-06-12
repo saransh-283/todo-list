@@ -1,21 +1,19 @@
 #all-cont {
-  color: palegreen;
-}
-#finished-cont {
   color: royalblue;
 }
+#finished-cont {
+  color: palegreen;
+}
 #new-cont {
-  color: tomato;
+  color: orangered;
 }
 #unfinished-cont {
-  color: #66543d;
+  color: greenyellow;
 }
 .todo-cont {
-  color: powderblue;
+  color: seagreen;
 }
-#main-cont {
-  font-family: monospace;
-}
+
 body {
-  background: silver;
+  background: wheat;
 }
