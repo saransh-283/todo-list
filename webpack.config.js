@@ -56,9 +56,8 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, {
                         loader: "css-loader",
                         options: {
-                            modules: true,
                             sourceMap: true,
-                            importLoaders: 2
+                            importLoaders: 2,
                         },
                     },
                     'sass-loader'

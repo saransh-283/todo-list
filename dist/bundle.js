@@ -9,6 +9,72 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/react-comp/AllItems/AllTodo.js":
+/*!*******************************************************!*\
+  !*** ./src/components/react-comp/AllItems/AllTodo.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _AllTodo_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AllTodo.scss */ \"./src/components/react-comp/AllItems/AllTodo.scss\");\n\n\n\nvar All = function All() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    id: \"all-cont\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"All\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (All);\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/AllItems/AllTodo.js?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/FinishedItems/Finished.js":
+/*!*************************************************************!*\
+  !*** ./src/components/react-comp/FinishedItems/Finished.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _Finished_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Finished.scss */ \"./src/components/react-comp/FinishedItems/Finished.scss\");\n\n\n\nvar Finished = function Finished() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    id: \"finished-cont\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Finished\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Finished);\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/FinishedItems/Finished.js?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/Main/Main.js":
+/*!************************************************!*\
+  !*** ./src/components/react-comp/Main/Main.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _AllItems_AllTodo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../AllItems/AllTodo */ \"./src/components/react-comp/AllItems/AllTodo.js\");\n/* harmony import */ var _FinishedItems_Finished__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FinishedItems/Finished */ \"./src/components/react-comp/FinishedItems/Finished.js\");\n/* harmony import */ var _NewTodo_NewTodo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../NewTodo/NewTodo */ \"./src/components/react-comp/NewTodo/NewTodo.js\");\n/* harmony import */ var _Unfinished_Unfinished__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Unfinished/Unfinished */ \"./src/components/react-comp/Unfinished/Unfinished.js\");\n/* harmony import */ var _Todo_Todo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Todo/Todo */ \"./src/components/react-comp/Todo/Todo.js\");\n/* harmony import */ var _Main_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Main.scss */ \"./src/components/react-comp/Main/Main.scss\");\n\n\n\n\n\n\n\n\nvar Presentational = function Presentational() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    id: \"main-cont\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NewTodo_NewTodo__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FinishedItems_Finished__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Unfinished_Unfinished__WEBPACK_IMPORTED_MODULE_4__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_AllItems_AllTodo__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Todo_Todo__WEBPACK_IMPORTED_MODULE_5__.default, null));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Presentational);\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/Main/Main.js?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/NewTodo/NewTodo.js":
+/*!******************************************************!*\
+  !*** ./src/components/react-comp/NewTodo/NewTodo.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _NewTodo_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NewTodo.scss */ \"./src/components/react-comp/NewTodo/NewTodo.scss\");\n\n\n\nvar NewTodo = function NewTodo() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    id: \"new-cont\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"New\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewTodo);\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/NewTodo/NewTodo.js?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/Todo/Todo.js":
+/*!************************************************!*\
+  !*** ./src/components/react-comp/Todo/Todo.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _Todo_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Todo.scss */ \"./src/components/react-comp/Todo/Todo.scss\");\n\n\n\nvar Todo = function Todo() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"todo-cont\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Todo\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Todo);\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/Todo/Todo.js?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/Unfinished/Unfinished.js":
+/*!************************************************************!*\
+  !*** ./src/components/react-comp/Unfinished/Unfinished.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _Unfinished_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Unfinished.scss */ \"./src/components/react-comp/Unfinished/Unfinished.scss\");\n\n\n\nvar Unfinished = function Unfinished() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    id: \"unfinished-cont\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Unfinished\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Unfinished);\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/Unfinished/Unfinished.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -16,29 +82,18 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_one__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/one */ \"./src/js/one.js\");\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./css/style.scss */ \"./src/css/style.scss\");\n/* harmony import */ var _html_users_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./html/users.html */ \"./src/html/users.html\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_js_one__WEBPACK_IMPORTED_MODULE_3__.default, null), document.getElementById('root'));\n$('#text').html('Text');\n\n//# sourceURL=webpack://one-more-webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_react_comp_Main_Main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/react-comp/Main/Main */ \"./src/components/react-comp/Main/Main.js\");\n/* harmony import */ var _assets_css_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/css/style.scss */ \"./src/assets/css/style.scss\");\n/* harmony import */ var _assets_html_help_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/html/help.html */ \"./src/assets/html/help.html\");\n/* harmony import */ var _components_react_comp_AllItems_AllTodo_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/react-comp/AllItems/AllTodo.scss */ \"./src/components/react-comp/AllItems/AllTodo.scss\");\n/* harmony import */ var _components_react_comp_FinishedItems_Finished_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/react-comp/FinishedItems/Finished.scss */ \"./src/components/react-comp/FinishedItems/Finished.scss\");\n/* harmony import */ var _components_react_comp_NewTodo_NewTodo_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/react-comp/NewTodo/NewTodo.scss */ \"./src/components/react-comp/NewTodo/NewTodo.scss\");\n/* harmony import */ var _components_react_comp_Main_Main_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/react-comp/Main/Main.scss */ \"./src/components/react-comp/Main/Main.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n\n\n\n\n\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_react_comp_Main_Main__WEBPACK_IMPORTED_MODULE_3__.default, null), document.getElementById(\"root\"));\n$(\"#text\").html(\"Text\");\n\n//# sourceURL=webpack://one-more-webpack/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/js/one.js":
-/*!***********************!*\
-  !*** ./src/js/one.js ***!
-  \***********************/
+/***/ "./src/assets/html/help.html":
+/*!***********************************!*\
+  !*** ./src/assets/html/help.html ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar Comp = function Comp() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"React Component\");\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Comp);\n\n//# sourceURL=webpack://one-more-webpack/./src/js/one.js?");
-
-/***/ }),
-
-/***/ "./src/html/users.html":
-/*!*****************************!*\
-  !*** ./src/html/users.html ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"export default __webpack_public_path__ + \\\"html/users.html\\\";\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://one-more-webpack/./src/html/users.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"export default __webpack_public_path__ + \\\"html/help.html\\\";\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://one-more-webpack/./src/assets/html/help.html?");
 
 /***/ }),
 
@@ -52,14 +107,80 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./src/css/style.scss":
-/*!****************************!*\
-  !*** ./src/css/style.scss ***!
-  \****************************/
+/***/ "./src/assets/css/style.scss":
+/*!***********************************!*\
+  !*** ./src/assets/css/style.scss ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});\n\n//# sourceURL=webpack://one-more-webpack/./src/css/style.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://one-more-webpack/./src/assets/css/style.scss?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/AllItems/AllTodo.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/react-comp/AllItems/AllTodo.scss ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/AllItems/AllTodo.scss?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/FinishedItems/Finished.scss":
+/*!***************************************************************!*\
+  !*** ./src/components/react-comp/FinishedItems/Finished.scss ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/FinishedItems/Finished.scss?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/Main/Main.scss":
+/*!**************************************************!*\
+  !*** ./src/components/react-comp/Main/Main.scss ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/Main/Main.scss?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/NewTodo/NewTodo.scss":
+/*!********************************************************!*\
+  !*** ./src/components/react-comp/NewTodo/NewTodo.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/NewTodo/NewTodo.scss?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/Todo/Todo.scss":
+/*!**************************************************!*\
+  !*** ./src/components/react-comp/Todo/Todo.scss ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/Todo/Todo.scss?");
+
+/***/ }),
+
+/***/ "./src/components/react-comp/Unfinished/Unfinished.scss":
+/*!**************************************************************!*\
+  !*** ./src/components/react-comp/Unfinished/Unfinished.scss ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://one-more-webpack/./src/components/react-comp/Unfinished/Unfinished.scss?");
 
 /***/ }),
 
