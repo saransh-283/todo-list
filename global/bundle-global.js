@@ -15,7 +15,7 @@
   \**********************************/
 /***/ (() => {
 
-eval("console.log('hi');\n\n//# sourceURL=webpack://one-more-webpack/./src/assets/js/scripts.js?");
+eval("var html = document.getElementsByTagName('html')[0];\nvar toggle = document.getElementById('theme-toggle');\nvar notch = document.getElementById('circle');\nvar dark = localStorage.getItem('dark') ? localStorage.getItem('dark') : 'false';\nhtml.setAttribute('data-theme', dark);\nlocalStorage.setItem('dark', dark);\n\nfunction toggleClick() {\n  html.setAttribute('data-theme', !dark);\n  dark = !dark;\n  localStorage.setItem('dark', dark);\n}\n\ntoggle.addEventListener('click', toggleClick);\n\n//# sourceURL=webpack://one-more-webpack/./src/assets/js/scripts.js?");
 
 /***/ })
 
