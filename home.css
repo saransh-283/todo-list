@@ -1,0 +1,85 @@
+#finished-cont {
+  color: #9e9ef5;
+}
+
+.undo-btns button {
+  margin-left: 0.5rem;
+}
+
+.fa-undo {
+  color: silver;
+}
+
+#delete-btn {
+  color: #ff6868;
+}
+#new-cont {
+  color: orangered;
+  border-bottom: 1px solid #000;
+  width: max-content;
+}
+
+#add-input {
+  background: transparent;
+  border: none;
+  padding: 0 0.5rem;
+}
+
+#add-input:focus {
+  outline: none;
+}
+#unfinished-cont {
+  color: peru;
+}
+
+.fa-check {
+  color: #9eda45;
+}
+#main-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+}
+[data-theme=light] {
+  --background: rgb(255, 236, 199);
+  --footer-background: rgb(70, 70, 70);
+  --footer-link: rgb(170, 170, 170) ;
+}
+
+[data-theme=dark] {
+  --background: rgb(0, 0, 0);
+  --footer-background: rgb(70, 70, 70);
+  --footer-link: rgb(170, 170, 170) ;
+}
+
+body {
+  background: var(--background);
+}
+
+#head,
+#sub-head {
+  text-align: center;
+}
+
+footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--footer-background);
+  width: max-content;
+  column-gap: 1px;
+}
+
+#footer a {
+  padding: 0.2rem 0.7rem;
+  background: var(--background);
+  text-decoration: none;
+  color: var(--footer-link);
+  text-align: center;
+}
+
