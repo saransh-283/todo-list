@@ -1,0 +1,27 @@
+[data-theme='false'] {
+    --background: rgb(255, 236, 199);
+    --footer-background: rgb(70, 70, 70);
+    --footer-link: rgb(170, 170, 170);
+    --toggle-right: unset;
+    --toggle-border: black;
+    --toggle-background: white;
+    --toggle-circle-background: rgb(36, 36, 36);
+    --toggle-translate: translate(0);
+    --text-color: black;
+    --add-btn: black;
+    --add-border: black;
+}
+
+[data-theme='true'] {
+    --background: rgb(71, 71, 71);
+    --footer-background: rgb(70, 70, 70);
+    --footer-link: rgb(170, 170, 170);
+    --toggle-right: .1rem;
+    --toggle-border: white;
+    --toggle-background: blue;
+    --toggle-circle-background: rgb(226, 226, 226);
+    --toggle-translate: translate(1.85rem);
+    --text-color: rgb(209, 209, 209);
+    --add-btn: white;
+    --add-border: white;
+}

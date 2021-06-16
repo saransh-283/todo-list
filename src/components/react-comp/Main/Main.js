@@ -1,18 +1,19 @@
 import React from "react";
 import { Provider } from "react-redux";
 import connected from "../../react-redux-connect/connect-comp";
-//import stateMaps from "../../react-redux-connect/maps";
 import "./Main.scss";
+
 
 const Main = () => {
   return (
-    <div id="main-cont">
+    <div>
       <Provider store={connected.store}>
-        <connected.AllTodoConnected />
-        <connected.FinishedConnected />
+        <div id="main-cont">
         <connected.NewTodoConnected />
-        <connected.UnfinishedConnected />
-        <connected.TodoConnected />
+        <div></div>
+        <connected.UnfinishedConnected/>
+        <connected.FinishedConnected />
+        </div>
       </Provider>
     </div>
   );

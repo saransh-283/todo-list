@@ -4,37 +4,26 @@ import "./NewTodo.scss";
 class NewTodo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      current: "",
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleClick=this.handleClick.bind(this)
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleChange(e) {
-    this.setState({
-      current: e.target.value,
-    });
-  }
-
-  handleClick(){
-    this.setState({
-        current:'',
-    });
-    this.props.addNote(this.state.current)
+  handleClick() {
+    if (document.getElementById('add-input').value) {
+      this.props.addNote(document.getElementById('add-input').value);
+    }
   }
 
   render() {
     return (
       <div id="new-cont">
-        <h1>New</h1>
         <input
-          onChange={this.handleChange}
           type="text"
           placeholder="Add new item"
-          value={this.state.current}
+          id="add-input"
         />
-        <button onClick={this.handleClick}>Add</button>
+        <button className="btn" onClick={this.handleClick}>
+          <i className="fa fa-plus" aria-hidden="true"></i>
+        </button>
       </div>
     );
   }

@@ -3,34 +3,60 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Webpack = require('webpack')
 
+//jquery
 const providePlugin = new Webpack.ProvidePlugin({
     $: 'jquery'
 })
-const extractPlugin = new MiniCssExtractPlugin({
-    filename: 'style.css'
+
+//home
+const homeWebpackPlugin = new HtmlWebpackPlugin({
+    template: './src/assets/pages/home/home.html',
+    inject: true,
+    chunks: ['home', 'global'],
+    filename: 'home/index.html'
 })
-const htmlWebpackPlugin = new HtmlWebpackPlugin({
-    template: 'src/index.html'
+
+const homeCssPlugin = new MiniCssExtractPlugin({
+    filename: '[name]/[name].css',
+})
+
+//tuorial
+const tutorialWebpackPlugin = new HtmlWebpackPlugin({
+    template: './src/assets/pages/tutorial/tutorial.html',
+    inject: true,
+    chunks: ['tutorial', 'global'],
+    filename: 'tutorial/tutorial.html'
+})
+
+//about
+const aboutWebpackPlugin = new HtmlWebpackPlugin({
+    template: './src/assets/pages/about/about.html',
+    inject: true,
+    chunks: ['about', 'global'],
+    filename: 'about/about.html'
 })
 
 module.exports = {
     mode: "development",
-    entry: './src/index.js',
+    entry: {
+        home: './src/assets/pages/home/home.js',
+        about: './src/assets/pages/about/about.js',
+        tutorial: './src/assets/pages/tutorial/tutorial.js',
+        global: './src/assets/js/scripts.js',
+    },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js",
+        filename: "[name]/bundle-[name].js",
     },
     devServer: {
-        port: "5000",
+        host: '192.168.43.186',
+        disableHostCheck: true,
+        port: "5500",
         open: true,
-        contentBase: ['./dist']
+        contentBase: ['./dist/home']
     },
     module: {
         rules: [{
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
-            },
-            {
                 test: /\.html$/,
                 use: ['html-loader']
             },
@@ -42,16 +68,6 @@ module.exports = {
                 }
             },
             {
-                test: /\.html$/,
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        name: 'html/[name].[ext]'
-                    }
-                },
-                exclude: path.resolve(__dirname, 'src/index.html')
-            },
-            {
                 test: /\.scss$/,
                 use: [MiniCssExtractPlugin.loader, {
                         loader: "css-loader",
@@ -61,7 +77,7 @@ module.exports = {
                         },
                     },
                     'sass-loader'
-                ]
+                ],
             },
             {
                 test: /\.(js|jsx)$/,
@@ -74,7 +90,9 @@ module.exports = {
     },
     plugins: [
         providePlugin,
-        extractPlugin,
-        htmlWebpackPlugin
+        homeWebpackPlugin,
+        tutorialWebpackPlugin,
+        aboutWebpackPlugin,
+        homeCssPlugin
     ]
 }
