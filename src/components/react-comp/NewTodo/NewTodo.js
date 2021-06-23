@@ -22,7 +22,7 @@ class NewTodo extends React.Component {
           id="add-input"
         />
         <button className="btn" onClick={this.handleClick}>
-          <i className="fa fa-plus" aria-hidden="true"></i>
+          <i className="fa fa-plus"></i>
         </button>
       </div>
     );

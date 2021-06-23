@@ -9,7 +9,7 @@ body {
 }
 
 footer {
-    margin-top: 5rem;
+    margin: 5rem;
     display: flex;
     justify-content: space-around;
 }
@@ -41,6 +41,7 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
+    transform: scale(.7);
 }
 
 #theme-toggle:hover {
@@ -56,4 +57,10 @@ footer {
     position: absolute;
     transition: all .3s;
     transform: var(--toggle-translate);
+}
+
+.note-row {
+    height: 2rem;
+    display: flex;
+    align-items: center;
 }

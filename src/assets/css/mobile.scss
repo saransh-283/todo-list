@@ -1,0 +1,10 @@
+@media(max-width:768px) {
+    #main-cont {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .note-row {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+}

@@ -7,8 +7,8 @@ const store = createStore(reducer.reducer)
 
 const mapStateToProps = (state) => {
     return {
-        notes: state.notes.split('\u2191'),
-        removed: state.removed.split('\u2191')
+        notes: window.localStorage.getItem('notes').split('\u2191'),
+        removed: window.localStorage.getItem('removed').split('\u2191')
     }
 }
 

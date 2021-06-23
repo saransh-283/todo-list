@@ -2,18 +2,21 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Webpack = require('webpack')
+const ghpages = require('gh-pages');
 
 //jquery
 const providePlugin = new Webpack.ProvidePlugin({
     $: 'jquery'
 })
 
+ghpages.publish('dist', function(err) {});
+
 //home
 const homeWebpackPlugin = new HtmlWebpackPlugin({
     template: './src/assets/pages/home/home.html',
     inject: true,
     chunks: ['home', 'global'],
-    filename: 'home/index.html'
+    filename: 'index.html'
 })
 
 const homeCssPlugin = new MiniCssExtractPlugin({

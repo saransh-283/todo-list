@@ -4,24 +4,36 @@ import "./Finished.scss";
 class Finished extends React.Component {
   constructor(props) {
     super(props);
+this.unfinishNote=this.unfinishNote.bind(this)
+    this.deleteNote=this.deleteNote.bind(this)
+  }
+
+  unfinishNote(idx){
+    this.props.unfinishNote(idx)
+  }
+
+  deleteNote(idx){
+    this.props.deleteNote(idx)
   }
 
   render() {
     return (
       <div id="finished-cont">
-        {this.props.removed.map((note, idx) => (
-          <div key={idx} className="note">
-            <span className="undo-btns">
-              <button className="btn" onClick={(e) => this.props.unfinishNote(idx)}>
-                <i className="fa fa-undo" aria-hidden="true"></i>
-              </button>
-              <button id="delete-btn" className="btn" onClick={(e) => this.props.deleteNote(idx)}>
-                <i className="fa fa-trash-o" aria-hidden="true"></i>
-              </button>
-            </span>
+        {this.props.removed.map((note, idx) => {
+          return (
+            <div className="note-row" key={idx}>
+              <div>
+              <span className="btn" onClick={()=>this.unfinishNote(idx)}>
+                <i className="fa fa-undo"></i>
+              </span>
+              <span className="btn fa-trash-o" onClick={()=>this.deleteNote(idx)}>
+                <i className="fa fa-trash-o"></i>
+              </span>
+              </div>
               <del>{note}</del>
-          </div>
-        ))}
+            </div>
+          );
+        })}
       </div>
     );
   }
