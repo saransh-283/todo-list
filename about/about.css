@@ -25,7 +25,16 @@
   --add-btn: white;
   --add-border: white;
 }
+@media (max-width: 768px) {
+  #main-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+  .note-row {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}
 body {
   background: var(--background);
   color: var(--text-color);
@@ -37,7 +46,7 @@ body {
 }
 
 footer {
-  margin-top: 5rem;
+  margin: 5rem;
   display: flex;
   justify-content: space-around;
 }
@@ -69,6 +78,7 @@ footer {
   display: flex;
   align-items: center;
   position: relative;
+  transform: scale(0.7);
 }
 
 #theme-toggle:hover {
@@ -86,3 +96,12 @@ footer {
   transform: var(--toggle-translate);
 }
 
+.note-row {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+#social-media a {
+  text-decoration: none;
+  color: var(--text-color);
+}

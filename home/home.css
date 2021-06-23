@@ -2,33 +2,34 @@
   color: #9e9ef5;
 }
 
-.undo-btns button {
+i {
   margin-left: 0.5rem;
-}
-
-.btn {
-  padding: 0.3rem;
 }
 
 .fa-undo {
   color: silver;
 }
 
-#delete-btn {
+.fa-trash-o {
   color: #ff6868;
 }
 #new-cont {
   border-bottom: 1px solid var(--add-border);
   width: 50vw;
   max-width: 17rem;
+  position: relative;
 }
 
 #add-input {
   background: transparent;
   border: none;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   color: var(--text-color);
-  width: 80%;
+}
+
+#new-cont button {
+  position: absolute;
+  right: 0;
 }
 
 #add-input:focus {
@@ -77,7 +78,16 @@
   --add-btn: white;
   --add-border: white;
 }
+@media (max-width: 768px) {
+  #main-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+  .note-row {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}
 body {
   background: var(--background);
   color: var(--text-color);
@@ -89,7 +99,7 @@ body {
 }
 
 footer {
-  margin-top: 5rem;
+  margin: 5rem;
   display: flex;
   justify-content: space-around;
 }
@@ -121,6 +131,7 @@ footer {
   display: flex;
   align-items: center;
   position: relative;
+  transform: scale(0.7);
 }
 
 #theme-toggle:hover {
@@ -136,5 +147,11 @@ footer {
   position: absolute;
   transition: all 0.3s;
   transform: var(--toggle-translate);
+}
+
+.note-row {
+  height: 2rem;
+  display: flex;
+  align-items: center;
 }
 
